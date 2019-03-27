@@ -4,82 +4,102 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Bolt - Free Bootstrap 3 Theme">
+    <meta name="description" content="This is my portfolio site.">
+    <meta name="keyword" content="bolt, bootstrap, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <header class="header clearfix">
-      <div class="inner header-inner">
+    <header class="header">
+      <div class="inner header-inner clearfix">
         <i class="fas fa-bolt"></i>
-        <button class="button">Contact</button>
+        <a class="button header-button">Contact</a>
       </div>
     </header>
     <main>
       <div class="title">
         <div class="inner title-inner">
-          <h1>Bolt Theme</h1>
-          <p>FREE BOOTSTRAP THEMES</p>
+          <h1 class="title-top">Bolt Theme</h1>
+          <p class="title-sentence">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
       <section class="phone">
-        <div class="inner phone-inner">
-          <img class="phone_img" src="img/iphone.png">
-          <h3 class="title-text">WHAT WE CAN DO?</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="inner phone-inner clearfix">
+          <img class="phone-img" src="img/iphone.png">
+          <div class="phone-text">
+            <h2 class="title-text">WHAT WE CAN DO?</h2>
+            <p class="phone-sentence">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
         </div>
       </section>
       <article class="work">
         <div class="inner work-inner">
-          <h3 class="title-text">OUR LATEST WORK</h3>
-          <figure class="work_figure">
-            <img class="work_img" src="img/01.jpg">
-            <img class="work_img" src="img/02.jpg">
-            <img class="work_img" src="img/03.jpg">
-            <img class="work_img" src="img/04.jpg">
-            <img class="work_img" src="img/05.jpg">
-            <img class="work_img" src="img/06.jpg">
-          </figure>
-          <div class="work_block clearfix">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            <button class="button">Email Me!</button>
+          <h2 class="title-text">OUR LATEST WORK</h2>
+          <div class="work-div clearfix">
+            <a class="work-img">
+              <img src="img/01.jpg">
+            </a>
+            <a class="work-img">
+              <img src="img/02.jpg">
+            </a>
+            <a class="work-img">
+              <img src="img/03.jpg">
+            </a>
+            <a class="work-img">
+              <img src="img/04.jpg">
+            </a>
+            <a class="work-img">
+              <img src="img/05.jpg">
+            </a>
+            <a class="work-img">
+              <img src="img/06.jpg">
+            </a>
+          </div>
+          <div class="work-block clearfix">
+            <p class="work-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <a class="button work-button">Email Me!</a>
           </div>
         </div>
       </article>
       <section class="skill">
-        <div class="inner clearfix skill-inner">
-          <h3 class="title-text">OUR SKILLS</h3>
-          <figure class="img_skills">
-            <img src="img/circle_01.png">
-            <figcaption>JavaScript</figcaption>
-          </figure>
-          <figure class="img_skills">
-            <img src="img/circle_02.png">
-            <figcaption>Bootstrap</figcaption>
-          </figure>
-          <figure class="img_skills">
-            <img src="img/circle_03.png">
-            <figcaption>WordPress</figcaption>
-          </figure>
-          <figure class="img_skills">
-            <img src="img/circle_04.png">
-            <figcaption>Photoshop</figcaption>
-          </figure>
+        <div class="inner skill-inner">
+          <h2 class="title-text skill-text">OUR SKILLS</h2>
+          <div class="skill-figure clearfix">
+            <figure class="img-skills">
+              <img src="img/circle_01.png">
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="img-skills">
+              <img src="img/circle_02.png">
+              <figcaption>Bootstrap</figcaption>
+            </figure>
+            <figure class="img-skills">
+              <img src="img/circle_03.png">
+              <figcaption>WordPress</figcaption>
+            </figure>
+            <figure class="img-skills">
+              <img src="img/circle_04.png">
+              <figcaption>Photoshop</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
       <nav class="nav">
-        <ul>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+        <ul class="inner nav-ul">
+          <li class="nav-list"><a class="nav-img" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="nav-list"><a class="nav-img" href="#"><i class="fab fa-dribbble"></i></a></li>
+          <li class="nav-list"><a class="nav-img" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="nav-list"><a class="nav-img" href="#"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </nav>
     </main>
     <footer class="footer clearfix">
       <div class="inner footer-inner">
-        <p>Crafted with♥by BlackTie.co.</p>
+        <p class="footer-text">Crafted with♥by BlackTie.co.</p>
       </div>
     </footer>
   </body>
