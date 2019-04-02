@@ -5,7 +5,6 @@ body {
 }
 
 .inner {
-  width: 1100px;
   margin: 0 auto;
 }
 
@@ -97,20 +96,16 @@ body {
   padding-top: 50px;
 }
 
-.phone-img {
-  float: left;
-  margin-left: 70px;
-  margin-right: 100px;
+.phone-title {
+  margin-bottom: 35px;
 }
 
 .phone-text {
   float: left;
-  width: 60%;
 }
 
 .phone-sentence {
   font-size: 20px;
-  margin-top: 35px;
 }
 
 .work {
@@ -127,14 +122,10 @@ body {
 
 .work-div {
   margin-top: 40px;
-  margin-bottom: 90px;
 }
 
 .work-img {
-  margin-left: 100px;
-  margin-right: 0px;
   display: block;
-  float: left;
   transition: opacity 0.3s ease-out;
   opacity: 0.7;
   -webkit-opacity: 0.7;
@@ -144,23 +135,9 @@ body {
   opacity: 1;
 }
 
-.work-img:nth-child(3n + 1) {
-  margin-left: 0px;
-}
-
-.work-img:nth-child(n + 4) {
-  margin-top: 80px;
-}
-
 .work-block {
   display: table;
   margin: 0 auto;
-}
-
-.work-text {
-  float: left;
-  margin-right: 90px;
-  width: 460px;
 }
 
 .work-button {
@@ -189,13 +166,7 @@ body {
 }
 
 .img-skills {
-  float: left;
   font-size: 16px;
-  margin-right: 180px;
-}
-
-.img-skills:last-child {
-  margin-right: 0px;
 }
 
 .figcaption {
@@ -244,4 +215,97 @@ body {
 .footer-text {
   color: #f2f2f2;
   text-align: right;
+}
+
+/* PC専用追加スタイル */
+@media (min-width: 1200px) {
+  .inner {
+    width: 1100px;
+  }
+  
+  .phone-img {
+    float: left;
+    margin-left: 70px;
+    margin-right: 100px;
+  }
+
+  .phone-text {
+    width: 60%;
+  }
+
+  .work-img {
+    float: left;
+    margin-left: 100px;
+    margin-right: 0px;
+  }
+    
+  .work-img:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+
+  .work-img:nth-child(n + 4) {
+    margin-top: 80px;
+  }
+
+  .work-div {
+    margin-bottom: 90px;
+  }
+  
+  .work-text {
+    float: left;
+    margin-right: 90px;
+    width: 460px;
+  }
+
+  .img-skills {
+    float: left;
+    margin-right: 180px;
+  }
+  
+  .img-skills:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* タブレット専用追加スタイル */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .phone-inner {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  
+  .phone-title {
+    margin-top: 20px;
+  }
+  
+  .phone-sentence {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .work-img:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .work-button {
+    display: inline-block;
+    float: none;
+    margin-top: 40px;
+  }
+
+  .img-skills {
+    margin-bottom: 88px;
+  }
+  
+  .img-skills:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  
 }
