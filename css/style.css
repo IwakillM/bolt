@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+body {
   font-family: 'Lato';
 }
 
@@ -21,7 +21,7 @@
 }
 
 .picture {
-  vertical-align: text-top;
+  vertical-align: top;
 }
 
 
@@ -43,6 +43,7 @@
   font-size: 12px;
   border: none;
   transition: color 0.3s linear;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -99,12 +100,12 @@
 .phone-img {
   float: left;
   margin-left: 70px;
-  margin-right: 40px;
+  margin-right: 100px;
 }
 
 .phone-text {
   float: left;
-  width: 70%;
+  width: 60%;
 }
 
 .phone-sentence {
@@ -159,7 +160,7 @@
 .work-text {
   float: left;
   margin-right: 90px;
-  width: 535px;
+  width: 460px;
 }
 
 .work-button {
@@ -233,6 +234,9 @@
 
 .footer {
   background-color: #74cfae;
+}
+
+.footer-inner {
   padding-top: 20px;
   padding-bottom: 25px;
 }
