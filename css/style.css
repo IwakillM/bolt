@@ -32,7 +32,7 @@ body {
 }
 
 .header-bolt {
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .button {
@@ -56,6 +56,10 @@ body {
 
 .header-inner {
   padding: 15px 0px;
+}
+
+.humverger {
+  display: none;
 }
 
 .main-class {
@@ -267,8 +271,8 @@ body {
   }
 }
 
-/* タブレット専用追加スタイル */
-@media (min-width: 768px) and (max-width: 1199px) {
+/* タブレット・スマホ共通追加スタイル */
+@media (max-width: 1199px) {
   .inner {
     width: 97%;
   }
@@ -285,6 +289,10 @@ body {
   .phone-sentence {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .work-div {
+    display: inline-block;
   }
 
   .work-img:nth-child(3n) {
@@ -306,6 +314,70 @@ body {
   }
 }
 
+ /* スマホ専用追加スタイル */
 @media (max-width: 767px) {
+  .header-button {
+    display: none;
+  }
+
+  .humverger {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+
+  .line {
+    display: block;
+    background-color: #ddd;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
   
+  .line::before, .line::after {
+    border-top: 4px solid #FFF;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+  }
+
+  .line::before {
+    top: 4px;
+  }
+
+  .line::after {
+    bottom: 4px;
+  }
+
+  .title-inner {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+  
+  .title-top {
+    font-size: 80px;
+  }
+  .title-sentence {
+    font-size: 30px;
+  }
+  
+  .phone-sentence {
+    width: 100%;
+  }
+
+  .nav-ul {
+    padding: 50px 0;
+  }
+
+  .nav-list {
+    display: block;
+    width: 100%;
+  }
 }
