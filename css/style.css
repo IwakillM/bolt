@@ -32,7 +32,7 @@ body {
 }
 
 .header-bolt {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .button {
@@ -58,7 +58,7 @@ body {
   padding: 15px 0px;
 }
 
-.humverger {
+.humberger {
   display: none;
 }
 
@@ -282,8 +282,8 @@ body {
     padding-bottom: 25px;
   }
   
-  .phone-title {
-    margin-top: 20px;
+  .phone-img {
+    margin-bottom: 20px;
   }
   
   .phone-sentence {
@@ -293,10 +293,15 @@ body {
 
   .work-div {
     display: inline-block;
+    margin-bottom: 80px;
   }
 
   .work-img:nth-child(3n) {
     margin-bottom: 80px;
+  }
+  
+  .work-img:last-child {
+    margin-bottom: 0;
   }
 
   .work-button {
@@ -320,40 +325,31 @@ body {
     display: none;
   }
 
-  .humverger {
+  .humberger {
     display: block;
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
-    position: relative;
     float: right;
     cursor: pointer;
+    width: 50px;
   }
 
   .line {
-    display: block;
-    background-color: #ddd;
-    width: 30px;
-    height: 20px;
     position: relative;
-    cursor: pointer;
   }
   
-  .line::before, .line::after {
-    border-top: 4px solid #FFF;
-    position: absolute;
+
+  .berger-span {
     display: block;
-    content: '';
     width: 100%;
+    border-top: 3px solid #ddd;
+    margin-bottom: 5px;
   }
 
-  .line::before {
-    top: 4px;
-  }
-
-  .line::after {
-    bottom: 4px;
+  .berger-span:last-child {
+    margin-bottom: 0;
   }
 
   .title-inner {
